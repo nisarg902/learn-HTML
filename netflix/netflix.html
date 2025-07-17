@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+ 
+    
+    <link rel="stylesheet" href="netflix.css">
+    
+    <script>
+           function started(){
+      let ok = confirm("are you eighteen plus?");
+            if(true==ok){
+                   alert("welcome to the new era")
+            }else{
+                     alert("not permitted");
+            }
+           }
+
+    </script>
+    
+</head>
+<body background="../public/images/netflixbanner.webp">
+   
+   <div class="brand-title">
+        <div class="netflix">  NETFLIX   </div>
+          
+         <div class="dropdown" id="menu">
+               <div class="english">
+                   <button class="btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown"><i class="bi bi-translate"></i> english</button>
+                  <ul class="dropdown-menu">
+                    <li>English</li>
+                    <li>Hindi</li>
+                    <li>english</li>
+                    <li>French</li>
+                    <li>Sinhala</li>
+                    <li>Spanish</li>
+                  </ul>
+                 </div>
+                <div class="signin">
+                  <button class="btn btn-danger"> sign in</button>
+               </div>
+         </div>
+   </div>
+   <section>
+        <div class="section">
+      <div class="section-title">Unlimited movies, TV shows <br> and more</div>
+      <div class="section-subtitle">Starts at ₹149. Cancel at any time.</div> 
+      <div>Ready to watch? Enter your email to create or restart your membership.</div>
+ <form>  
+  <div> <input type="email" name="email" placeholder="email address" value="nisarg@gmail.com" id="input"  class="form-control" required> <button onclick="started()" class="btn btn-danger" id="button">Get Started  <span class="bi bi-chevron-right"></span> </button>
+  </form>
+   </section>
+</body>
+</html>

@@ -1,0 +1,77 @@
+  body{
+        background: rgba(0,0,0,0.5);
+      }
+       .brand-title{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+       }
+       .netflix{
+        
+        color: white;
+        padding: 1px;
+        font-size: 40px;
+        font-family:Arial;
+        font-weight:bold;
+        margin-left: 130px;
+        text-shadow: 2px 2px 0px black;
+       }
+       .netflix:hover{
+        font-size:65px;
+       }
+       .dropdown{
+         display: flex;
+         justify-content:space-between;
+       }
+         .signin{
+        color: white;
+        padding: 10px 4px;
+        margin-right:159px;
+    
+    
+       }
+       .english{
+         color: white;
+        padding: 10px 4px;
+        border-radius: 15px;
+        border: white;
+        margin-right:4px;
+        
+       }
+       .section{
+         display: block;
+         size:fit;
+         justify-content: center;
+         align-items: center;
+         color: white;
+         margin-top: 200px;
+         margin-left: 500px;
+         
+       }
+       .section-title{
+        color: white;
+        font-size: 40px;
+        font-family:Arial;
+        font-weight:bold;
+        margin-top: 5px;
+       }
+       .section-subtitle{
+         font-family: Arial;
+         font-size:medium ;
+         margin-top: 10px;
+         font-weight: bold;
+         font-family: Arial;
+         margin-bottom: 10px;
+       }
+      #input{
+         display: inline-block;
+         width: 380px;
+         padding: 10px;
+         margin-top: 20px;
+         border-radius: 5px;
+      
+       }
+       #button{
+        padding: 10px;
+        border-radius: 5px;
+       }

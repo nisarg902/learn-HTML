@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        TEST:
+        <input type="text" name="text"  pattern="\d" placeholder="RGB">
+        <button> number only </button>
+    </form>
+    <form>
+        TEST:
+        <input type="text" name="text"  pattern="\d\D" placeholder="RGB">
+        <button> first number second other than number</button>
+    </form>
+    <form>
+        TEST:
+        <input type="text" name="text"  pattern="red|green|orange" placeholder="RGB">
+        <button> red green orange accpted only</button>
+    </form>
+    <form>
+        TEST:
+        <input type="text" name="text"  pattern="\w" placeholder="RGB">
+        <button> a-z A-Z 0-9 accpted only but only one</button>
+    </form>
+    <form>
+        TEST:
+        <input type="text" name="text"  pattern="\W" placeholder="RGB">
+        <button> only symbols </button>
+    </form>
+    <form>
+        TEST:
+        <input type="text" name="text"  pattern="\+91d\{10}" placeholder="RB">
+        <button> only 10 number accepted </button>
+    </form>
+    <form>
+        TEST:
+        <input type="number" min="45" max="60" name="number"   >
+        <button> only 10 number accepted </button>
+    </form>
+    <input type="date">
+    <input type="datetime-local">
+    <input type="month">
+    <form>
+        <input type="file" multiple > 
+        <input type="date" value="2025-07-17" min="2025-07-16" max="2025-07-20">
+        <input type="radio" name="ok" value="first">first
+        <input type="radio" name="ok" value="second">second
+    <button> submit</button>
+        
+    </form>
+</body>
+</html>
