@@ -1,10 +1,20 @@
   body{
-        background: rgba(0,0,0,0.5);
+    background-size: cover;
+      }
+      .shade{
+        background-color: rgba(0,0,0,0.5);
+        height: 130vh;
+        margin-bottom: -100px;
+        margin-top: -50px;
+        
+        
+
       }
        .brand-title{
         display: flex;
         justify-content: space-between;
-        margin-top: 50px;
+        margin-top: 70px;
+        z-index: 5px;
        }
        .netflix{
         
@@ -75,3 +85,55 @@
         padding: 10px;
         border-radius: 5px;
        }
+       .subfooter{
+        display: grid;
+        grid-template-columns:3fr 3fr 3fr 3fr;
+       }
+       footer{
+        background-color: black;
+        color: white;
+        margin-top: 70px;
+        height: 80vh;
+  
+       }
+       .subfooter{
+        padding: 70px;
+        margin-left: 10%;
+       }
+       .name{
+        margin-left: 50px;
+        padding-top: 50px;
+        
+        
+        
+       }
+       .FAQ span{
+        display: block;
+        margin-bottom: 10px;
+       }
+       .helpcenter span{
+        display: block;
+        margin-bottom: 20px;
+       }
+
+    .Acount span{
+       display: block;
+        margin-bottom: 20px;
+    }
+    .media_center span{
+       display: block;
+        margin-bottom: 20px;
+    }
+       .FAQ {
+        /* margin-left: 100px;
+        margin-bottom: 100px; */
+       }
+       .lastbottom{
+        margin-left: 10%;
+        margin-bottom: 10px;
+       }
+       #para1 ,#para2{
+        padding: 10px;
+        margin-bottom: 10px;
+       }
+      
