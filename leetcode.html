@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+ 
+    
+    <style>
+        body{
+            font-family: Arial;
+        }
+        
+        header{
+            display: flex;
+            padding: 10px;
+            
+            justify-content: space-between;
+            width: 100%;
+            background-color: lightskyblue;
+        }
+        header span{
+            padding: 10px;
+        }
+        section{
+            display: grid;
+            grid-template-columns: 6fr 6fr;
+            margin-top: 10px;
+            
+        }
+        .container1{
+            margin: 10px;
+            border: 2px dashed black;
+             overflow-y: scroll;
+            overflow-x: hidden;
+            color: black;
+            
+
+        }
+        .container2{
+            margin: 10px;
+            border: 2px dashed black;
+            overflow-y: scroll;
+            overflow-x: hidden;
+            color: black;
+
+        }
+        .premium{
+            background-color: (255,243,209);
+            color: red;
+            padding: 5px;
+            border: 5px;
+        }
+        font{
+            background-color: turquoise;
+            border:1 px blue;
+            border-radius: 5px;
+        }
+        option{
+            border: none;
+        }
+        select{
+            border:none ;
+        }
+         code{
+            color: black;
+         }
+       
+        .bi-bag{
+            color: goldenrod;
+        }
+       .preimium{
+        color: red;
+       }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+                <span class="bi bi-javascript"> </span>
+                <span> 30 Days of JavaScript </span>
+                <span class="bi bi-chevron-left"> </span>
+                <span class="bi bi-chevron-right"> </span>
+                <span class="bi bi-shuffle"></span>
+        </div>
+        <div>
+            <span></span>
+            <span></span>
+            <span><i class="bi bi-cloud-arrow-up"></i>submit</span>
+            <span ><i class="bi bi-file-earmark"></i></span>
+
+        </div>
+        <div>
+          <span></span>
+          <span><i class="bi bi-gear"></i></span>
+          <span><i class="bi bi-stopwatch-fill"></i></span>
+          <span>Register or Log in</span>
+          <span class="preimium">preimium</span>
+
+        </div>
+        
+    </header>
+    <section>
+
+
+    <div class="container1">
+         <div class="leet-nav">
+               <span class="bi bi-file-binary"> Description</span> |
+         
+               <span class="bi bi-book" > Editorial</span>|
+         
+               <span class="bi  bi-clock-history">  Solution</span> |
+         
+               <span><i class="bi bi-arrow-counterclockwise"></i> Submission</span>
+         
+            </div>
+
+            <div class="leet-heading">
+                 2667.Create Hello World Function
+            </div>
+         
+            <div class="button">
+                <span>Easy</span>
+                <div type="button"> <i class="bi bi-bag">Companies</i></div>
+
+            </div>
+            <p> Wite a function<font>createhelloworld</font> .it should return a new function that allows returns "hello world"</p>
+            
+            <div>Example</div>
+             
+        <code><b>input:args=[]</b><br>
+           <b>Output:"Hello .World"</b><br>  
+        </code>
+        <pre>
+    
+
+The function returned by createHelloWorld should always return "Hello World".</pre>
+
+<pre>
+Example 2:
+
+Input: args = [{},null,42]
+Output: "Hello World"
+Explanation:
+const f = createHelloWorld();
+f({}, null, 42); // "Hello World"
+</pre>
+         <footer>
+        <span><i class="bi bi-hand-thumbs-up">1.5k</i></span>
+        <span><i class="bi bi-hand-thumbs-down"></i>dislike</span>
+        <span><i class="bi bi-chat">257</i></span>
+        <span class="bi bi-star"></span>
+    </footer>
+    
+
+    </div>
+  
+
+    <div class="container2">
+            <div class="leet-nav">
+                <span><i class="bi bi-code-slash"></i></span>
+
+            </div>
+            <div>2q
+                <span ><i class="bi bi-caret-down-fill"></i> JavaScript</span>
+                <span> Auto</span>
+            </div>
+            <div>
+                <ol type="1" start="1" Stop="14">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li><font font-color:blue;>return function(...args) {</font> </li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+              <li>     <details> </details> </li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    
+
+                    
+                    
+                  
+                </ol>
+            </div>
+    
+    </div>
+
+
+
+    </section>
+</body>
+</html>

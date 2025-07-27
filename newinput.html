@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <dl>
+            <dt> username</dt>
+            <dd><input onblur="verifyName()" onkeyup="changecase()" type="text" id="username"></dd>
+            <span id="usererror"></span>
+
+
+
+      </dl>
+      <button onclick="verifyuser()"> Register</button>
+
+
+    <script>
+        function changecase(){
+          var chnagescase  = document.getElementById("username").value;
+           document.getElementById("username").value= changecase.toUpperCase();
+
+          if (chnagescase){
+
+          }
+        }
+
+function verifyuser(){
+ var username = document.getElementById("username").value;
+ var usererror=document.getElementById("usererror");
+ if(username == ""){
+  usererror.innerHTML="username required".fontcolor('red');
+ }
+
+}
+function verifyName(){
+    var username = document.getElementById("username").value;
+ var usererror=document.getElementById("usererror");
+ if(username!=""){
+    usererror.innerHTML="user verified".fontcolor('green');
+ }
+}
+    </script>
+    
+</body>
+</html>
+
+

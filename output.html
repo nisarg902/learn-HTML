@@ -3,9 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>output</title>
 </head>
-<body>
-    
+<!-- <body>
+    <h2>click delete button to delete record</h2>
+    <button onclick="deleteclick()"> delete</button>
+
+    <script>
+        function deleteclick(){
+          x=  confirm("record will be deleted");
+          if(x==true){
+            alert("good");
+          }
+        }
+    </script> -->
+    <body>
+<!--   
+      //  var link = "<a href='home.html'>home</a>"; -->
+      <!-- //  document.write(link);
+      //  var username="john";
+      //  var age = 22;
+      //  var msg1 ="hello !" +" " +username+" " +"you will be"+" " +(age+1) +" ";
+      // var msg2=`hello ! ${username} you will be ${age +1}`;
+      //  document.write(msg1);
+      //  document.write(msg2);
+      // var path ="D:\\image\\public\\flower.jpg";
+      // document.write(path);
+    --><dl>
+            <dt> username</dt>
+            <dd><input type="text" id="username"></dd>
+            <dd id="usererror"></dd>
+
+
+
+      </dl>
+      <button onclick="verify()"> Register</button>
+
+    <script>
+
+function verify(){
+ var username = document.getElementById("username").value;
+ var usererror=document.getElementById("userror")
+ if(username == ""){
+  usererror.innerHTML="username required";
+ }
+
+}
+
+    </script>
 </body>
 </html>
