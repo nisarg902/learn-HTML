@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid overview</title>
+</head>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"&gt;>
+   
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+   <style>
+       .heading{
+            font-size: 30px;
+            height: 61px;
+            font-weight: bold;
+        }
+        .heading1  {
+            display: flex;
+            justify-content: space-between;
+            border: 1px solid rgb(204, 197, 197);
+            padding: 8px;
+            background-color: rgb(218, 212, 212);
+           
+        }
+        .not_available{
+            background-color: rgb(252, 11, 11);
+            border-radius: 5px;
+            color: white;
+            padding: 2px;
+            font-size: small;
+        }
+        .available{
+            background-color: green;
+             border-radius: 5px;
+            color: white;
+            padding: 2px;
+            font-size: small;
+        }
+          .hd2{
+            border: 1px solid rgb(204, 197, 197);
+            padding: 0px;
+            background-color: rgb(218, 213, 213);
+            width: 7%;
+            margin: 5px;
+           
+        }
+        #flag1,#flag2 ,#flag3,#flag4{
+         height: 40px;
+         width: 40px;
+         border-radius: 40px;
+        }
+
+        th,td{
+            padding: 10px;  
+        }
+        tr{
+            text-align: center;
+        }
+        .product_image{
+            height: 25px;
+            width: 25px;
+            border-radius: 25px;
+            margin-left: -38%;
+        
+        }
+        #category{
+        text-align: start;
+        }
+        
+        #button,#button2,#button3,#button4{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            padding: 2px;
+            font-size: small;
+        }
+   </style>
+<body>
+    <header>
+        
+        <div class="heading" >
+            <h3>Kendo UI for jQuery Grid Overview</h3>
+        </div>
+        <div class="heading1">
+            <div>
+                <span class="bi bi-file-pdf"> Export to Excel</span>
+                <span class="bi bi-file-pdf"> Export to PDF</span>
+             </div>
+            <div>
+                <span class="bi bi-search"> Search...</span>
+            </div>
+        </div >
+        <div class="hd2">
+            <span class="bi bi-arrow-down"> Catogry<span class="bi bi-x-circle-fill"></span></span>
+        </div>
+
+
+    </header>
+<table  width="100%" rules="all" frame="box" style="border-color: rgb(204, 195, 195);"
+
+  <tr><th>&nbsp</th>
+    <th>Product name<span class="bi bi-three-dots-vertical"></span></th>
+    <th>Price<span class="bi bi-three-dots-vertical"></span></th>
+    <th>In stock<span class="bi bi-three-dots-vertical"></span></th>
+    <th> category<span class="bi bi-three-dots-vertical"></span></th>
+    <th>rating<span class="bi bi-three-dots-vertical"></span></th>
+    <th>country<span class="bi bi-three-dots-vertical"></span></th>
+    <th> Units<span class="bi bi-three-dots-vertical"></span></th>
+    
+  </tr>
+  <tr style="background-color: rgb(220, 210, 214);" aria-colspan="6">
+    
+</tr>
+<tr id="category">
+    <td colspan="12"> <details open id="category">
+            <summary><b>Category: Seafood, Total Sales: null</b></summary>
+    </details>
+    </td>
+                     
+</tr>
+  <tr style="background-color: rgb(220, 210, 214);">
+    
+    <td>1</td>
+    <td><img src="../public/images/ikura.webp" class="product_image">ikura</td>
+    <td>$31.00</td>
+    <td><button class="btn btn-danger" class="button" id="button">not available</button></td>
+    <td>seafood</td>
+    <td> <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star"></span>
+                    <span class="bi bi-star"></span>
+                    <span class="bi bi-star"></span>
+    </td>
+     <td class="flag1"><img id="flag1" src="../flag1.png"></td>
+    <td>25</td>
+    
+</tr>
+<tr>
+    <td>2</td>
+    <td><img src="../public/images/ikura.webp" class="product_image">kombu</td>
+    <td>$6.00</td>
+      <td><button class="btn btn-primary" id="button2">Available</button></td>
+     <td>seafood</td>
+      <td> <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star"></span>
+                    <span class="bi bi-star"></span>
+     </td>
+     <td class="flag"><img  id="flag2" src="../flag2.png"></td>
+                
+    <td>25</td>
+  </tr>
+  <tr style="background-color: lightgray;">
+    <td>3</td>
+    <td><img src="../public/images/ikura.webp" class="product_image">Camron Tigers</td>
+    <td>$56.00</td>
+    <td><button class="btn btn-danger" id="button3">not available</button></td>
+     <td>seafood</td>
+    <td> <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+   </td>
+     <td class="flag"><img id="flag3" src="../flag1.png"></td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td><img src="../public/images/ikura.webp" class="product_image">Nord-Ost Matjeshering</td>
+    <td>$7.00</td>
+     <td><button class="btn btn-danger" id="button4">Not available</button></td>
+     <td>seafood</td>
+      <td> <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star"></span>
+                    <span class="bi bi-star"></span>
+                    <span class="bi bi-star"></span>
+     </td>
+    <td class="flag"><img id="flag4" src="../flag1.png"></td>
+    <td>25</td>
+  </tr>
+ 
+  
+ 
+</table>
+    
+    
+</body>
+</html>

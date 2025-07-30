@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personnel portfoli</title>
+</head>
+<script>
+    function verifyUser(){
+        var userName = document.getElementById("userName").value;
+
+        var usererror = document.getElementById("usererror");
+
+        var myfirstcharcode=userName.charCodeAt(0);
+        if(myfirstcharcode>=65 &&myfirstcharcode<=99){
+            usererror.innerHTML=""
+        }else{
+            usererror.innerHTML="pleae type fist character big".fontcolor("green");
+        }
+    }
+</script>
+<body>
+
+
+
+
+    <input type="text" id="userName"  onblur="verifyUser()">
+    <div id="usererror"></div>
+    <button onclick="verifyUser()"> add</button>
+    
+</body>
+</html>
